@@ -34,13 +34,13 @@ void ListAllContacts(){
     ClearScreen();
     if(contactCount == 0){
         printf("Please create your first contact.\n");
+        PrintHelperMessage();
     }
     else{
         for(int i = 0; i < contactCount; i++){
             printf("%d. %s", i, contacts[i].name);
         }
     }
-    PrintHelperMessage();
 }
 int AddContact(char name[], int phoneNumber, char address[], char email[]){
     
